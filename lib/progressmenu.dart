@@ -64,7 +64,7 @@ class ProgressMenuState extends State<Progress> {
       highScores[1] = prefs.getInt('survivalScore');
     }
 
-    if (prefs.getStringList('perfectionList')!=null) {
+    if (prefs.getStringList('perfectionistList')!=null) {
       perfectionistData = prefs.getStringList('perfectionistList');
       for (int x=0;x<perfectionistData.length;x++) {
         perfectionistLine.add(new DataTemplate(x, int.parse(perfectionistData[x])));
