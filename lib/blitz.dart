@@ -53,7 +53,7 @@ class BlitzState extends State<Blitz> {
     final prefs = await SharedPreferences.getInstance();
     final hs = prefs.getInt(k) ?? 0;
     List<String> scores = prefs.getStringList(l) ?? List<String>();
-    if (score>hs.toInt()) {
+    if (score>=hs.toInt()) {
       prefs.setInt(k,score);
     }
     scores.add(score.toString());
